@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obligatorisk - KINOBILLETT OPPGAVE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Javascript.js"></script>
+</head>
+<body>
+<div class="container">
+    <section class="bestill-billett">
+        <h1>BESTILLING AV KINOBILLETTER</h1>
+        <label for="film">Film: </label>
+        <select id="film" name="film">
+            <option value="" disabled selected>Velg film</option>
+            <option value="Githubs Undergang">Githubs Undergang</option>
+            <option value="The Hub of Gits">The Hub of Gits</option>
+        </select><br>
+        <span id="filmError" class="error-message"></span><br><br>
+
+        <label for="antall">Antall billetter: </label>
+        <input type="text" id="antall" required><br>
+        <span id="antallError" class="error-message"></span><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="fornavn">Fornavn: </label>
+                </td>
+                <td>
+                    <input type="text" id="fornavn" required>
+                    <span id="fornavnError" class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="etternavn">Etternavn: </label>
+                </td>
+                <td><input type="text" id="etternavn" required>
+                    <span id="etternavnError" class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telefonnr">Telefonnummer: </label>
+                </td>
+                <td>
+                    <input type="text" id="telefonnr" required>
+                    <span id="telefonnrError" class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="epost">Epostadresse: </label>
+                </td>
+                <td>
+                    <input type="text" id="epost" required>
+                    <span id="epostError" class="error-message"></span>
+                </td>
+            </tr>
+        </table>
+        <button onclick="KjopB()">Kjøp en dum billett</button>
+    </section>
+
+    <section class="vis-billetter">
+        <h2>Alle billetter</h2>
+        <ul id="billettListe"></ul>
+        <button onclick="slettB()">Slett alle dumme billetter</button>
+    </section>
+</div>
+</body>
+</html>
