@@ -1,14 +1,7 @@
-package com.example.oblig3_2;
+package com.example.oblig3_6;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-
-@Entity
 public class Bestilling {
 
-    @GeneratedValue
-    @Id
     private Long id;
     private String film;
     private int antall;
